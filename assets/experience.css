@@ -1,7 +1,7 @@
 .reading-progress{position:fixed;z-index:80;left:0;right:0;top:0;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;pointer-events:none}
 .hero-visual>.image-zoom{position:relative;isolation:isolate}
-.hero-visual>.image-zoom>.scene-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.5s ease,transform 8s ease-out;transform:scale(1.025);pointer-events:none}
-.hero-visual>.image-zoom>.scene-slide.is-active{opacity:1;transform:scale(1.09)}
+.hero-visual>.image-zoom>.scene-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .75s ease;transform:none;pointer-events:none}
+.hero-visual>.image-zoom>.scene-slide.is-active{opacity:1;transform:none}
 .hero-visual>.image-zoom .zoom-label{z-index:3}
 .scene-controls{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);display:flex;align-items:center;background:#253b31e8;padding:2px 7px;border:1px solid #d6d4bc66;border-radius:30px;z-index:4;gap:1px}
 .scene-controls button{width:35px;height:35px;display:flex;align-items:center;justify-content:center;background:transparent;color:var(--paper);padding:0;border-radius:50%}
@@ -13,7 +13,7 @@
 .signature .orbital-one{animation:orbit-breathe-one 12s ease-in-out infinite}
 .signature .orbital-two{animation:orbit-breathe-two 12s ease-in-out infinite}
 .signature-art>svg{animation:flower-breathe 10s ease-in-out infinite}
-.scene-paused .hero-visual>.image-zoom>.scene-slide{transition:opacity .6s;transform:scale(1.025)}
+.scene-paused .hero-visual>.image-zoom>.scene-slide{transition:opacity .6s;transform:none}
 @keyframes stamp-float{0%,100%{transform:translateY(0) rotate(-9deg)}50%{transform:translateY(-9px) rotate(-5deg)}}
 @keyframes card-float{0%,100%{transform:translateY(0) rotate(5deg)}50%{transform:translateY(-7px) rotate(3deg)}}
 @keyframes orbit-breathe-one{0%,100%{transform:rotate(-28deg) scale(1)}50%{transform:rotate(-20deg) scale(1.025)}}
@@ -46,6 +46,7 @@
 .media-card{margin:0;min-width:0}
 .media-card .image-zoom{background:var(--white);border:1px solid #d7d7c6;border-radius:3px;aspect-ratio:1 / 1.08}
 .media-card .image-zoom>img{width:100%;height:100%;object-fit:contain}
+.media-card .image-zoom:hover>img{transform:none}
 .media-card .zoom-label{left:12px;bottom:12px;padding:7px 10px;font-size:8px;gap:14px}
 .media-card figcaption{padding-top:15px;line-height:1.6}
 .media-card figcaption>strong{display:block;font:500 13px/1.5 var(--sans);letter-spacing:0}
@@ -91,7 +92,7 @@
 .photo-navigation{position:absolute;bottom:9px;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:25px;min-height:38px}
 .photo-navigation>button{display:flex;align-items:center;justify-content:center;width:40px;height:38px;background:transparent;border:1px solid #d4d3ba88;border-radius:50%;color:var(--paper);font-size:23px}
 .photo-navigation>span{font-size:11px;color:var(--pale-gold);white-space:nowrap;min-width:45px;text-align:center}
-.photo-dialog figure>img{max-height:66vh}
+.photo-dialog figure>img{width:auto;max-width:100%;height:auto;max-height:66vh;object-fit:contain;margin-inline:auto}
 .photo-dialog figcaption{font-size:21px;padding-inline:25px;line-height:1.4}
 .motion-toggle{padding:4px 0;background:transparent;color:var(--muted);border-bottom:1px solid #a69d7c;font-size:10px;line-height:1.5;min-height:28px}
 .motion-toggle:disabled{cursor:default;border-color:transparent}
