@@ -16,7 +16,7 @@ Le formulaire prépare un SMS localement ; la personne choisit ensuite l’envoi
 
 ## Contenus
 
-Seuls le logo et trois photographies de l’espace ont été intégrés. Aucune conversation, photographie de cliente, comparaison avant/après ou pièce privée n’est incluse.
+Les photographies du lieu, les soins, les bons cadeaux, les documents de présentation et les séries avant/après sont classés par univers. Les photos de clientes sont ajoutées après l’autorisation explicite donnée pour cette publication. Aucune conversation Instagram ni lien temporaire de téléchargement n’est inclus.
 
 Les images et l’identité de l’établissement restent la propriété de leurs ayants droit. Les licences des polices auto-hébergées se trouvent dans `assets/fonts/`.
 

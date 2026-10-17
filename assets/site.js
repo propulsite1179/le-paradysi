@@ -37,24 +37,42 @@
         }
       }
     }, {threshold: 0.12});
-    document.querySelectorAll('.world, .section-heading, .signature-copy, .about-copy, .massage-feature, .spa-editorial, .gift-section, .treatment').forEach(element => observer.observe(element));
+    document.querySelectorAll('.world, .section-heading, .signature-copy, .about-copy, .massage-feature, .spa-editorial, .gift-section, .treatment, .care-story-copy, .care-story-photo, .media-heading, .gift-photo-section, .result-preview, .treatment-visuals, .document-pair, .spa-documents').forEach(element => observer.observe(element));
   }
 
   const dialog = document.querySelector('.photo-dialog');
   let photoTrigger = null;
+  let collection = [];
+  let photoIndex = 0;
+  const renderPhoto = index => {
+    photoIndex = (index + collection.length) % collection.length;
+    const source = collection[photoIndex];
+    const photo = document.querySelector('#photo-full');
+    photo.src = source.dataset.image;
+    photo.alt = source.dataset.caption;
+    document.querySelector('#photo-caption').textContent = source.dataset.caption;
+    document.querySelector('#photo-counter').textContent = `${photoIndex + 1} / ${collection.length}`;
+    dialog.querySelector('.photo-navigation').hidden = collection.length < 2;
+  };
   const closePhoto = () => dialog?.close();
   for (const trigger of document.querySelectorAll('.image-zoom')) {
-    trigger.addEventListener('click', () => {
-      const photo = document.querySelector('#photo-full');
-      const caption = trigger.dataset.caption;
-      photo.src = trigger.dataset.image;
-      photo.alt = caption;
-      document.querySelector('#photo-caption').textContent = caption;
+    trigger.addEventListener('click', event => {
+      if (event.defaultPrevented) return;
+      const group = trigger.closest('[data-gallery-group]');
+      collection = group ? Array.from(group.querySelectorAll('.image-zoom')).filter(item => !item.closest('[hidden]')) : [trigger];
+      if (!collection.length) collection = [trigger];
       photoTrigger = trigger;
+      renderPhoto(collection.indexOf(trigger));
       dialog.showModal();
       document.body.classList.add('photo-is-open');
     });
   }
+  dialog?.querySelector('.photo-previous').addEventListener('click', () => renderPhoto(photoIndex - 1));
+  dialog?.querySelector('.photo-next').addEventListener('click', () => renderPhoto(photoIndex + 1));
+  dialog?.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft') { event.preventDefault(); renderPhoto(photoIndex - 1); }
+    if (event.key === 'ArrowRight') { event.preventDefault(); renderPhoto(photoIndex + 1); }
+  });
   dialog?.querySelector('.photo-close').addEventListener('click', closePhoto);
   dialog?.addEventListener('click', event => { if (event.target === dialog) closePhoto(); });
   dialog?.addEventListener('close', () => {
