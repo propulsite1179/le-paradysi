@@ -33,7 +33,7 @@
             ? 'Relancer le diaporama'
             : 'Mettre le diaporama en pause'
       );
-      pause.querySelector('span').textContent = stopped ? '▷' : 'Ⅱ';
+      pause.querySelector('span').dataset.sceneIcon = stopped ? 'play' : 'pause';
       pause.disabled = reducedMotion.matches;
     }
     for (const toggle of motionToggles) {

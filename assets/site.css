@@ -2191,7 +2191,10 @@ body::before {
   overflow: hidden;
 }
 .information-band::after {
-  content: '✧';
+  content: '';
+  width: 180px;
+  height: 180px;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20stroke%3D%22%23b2a57426%22%20stroke-width%3D%220.8%22%3E%3Cpath%20d%3D%22M8%201C8%205.5%205.5%208%201%208c4.5%200%207%202.5%207%207%200-4.5%202.5-7%207-7-4.5%200-7-2.5-7-7Z%22%2F%3E%3C%2Fsvg%3E") center / contain no-repeat;
   position: absolute;
   right: 40px;
   top: 20px;
@@ -2670,4 +2673,22 @@ body::before {
   font-size: clamp(30px, 3vw, 42px);
   line-height: 1.1;
   margin-bottom: 32px;
+}
+
+/* Vector symbols keep controls legible without platform symbol fonts. */
+.ui-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+[data-scene-icon="pause"] .icon-play,
+[data-scene-icon="play"] .icon-pause {
+  display: none;
 }
