@@ -19,7 +19,7 @@
     selectors.forEach((selector, i) => selector.setAttribute('aria-pressed', String(i === scene)));
     hero.dataset.image = slides[scene].getAttribute('src');
     hero.dataset.caption = slides[scene].alt;
-    hero.setAttribute('aria-label', `Agrandir : ${slides[scene].alt}`);
+    hero.setAttribute('aria-label', `Voir la photo : ${slides[scene].alt}`);
   };
   const updatePause = () => {
     const stopped = paused || reducedMotion.matches;

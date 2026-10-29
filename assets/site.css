@@ -1,12 +1,13 @@
 :root {
-  --paper: #f8f6ef;
-  --cream: #eeebdf;
-  --white: #fffdf8;
-  --ink: #253b31;
-  --muted: #5d675d;
-  --gold: #806030;
-  --pale-gold: #e5d2a7;
-  --line: #d8d9cb;
+  --paper: #fbf7ef;
+  --cream: #efe4d3;
+  --white: #fffdf9;
+  --ink: #3f3024;
+  --muted: #6d5d4c;
+  --gold: #7b5a26;
+  --pale-gold: #eadbc0;
+  --line: #ddcdb5;
+  --gold-hover: #65471c;
   --serif: 'Cormorant Garamond', Georgia, serif;
   --sans: 'DM Sans', Arial, sans-serif;
 }
@@ -152,8 +153,8 @@ textarea:focus-visible {
   gap: 25px;
   min-height: 51px;
   padding: 14px 23px;
-  background: var(--ink);
-  border: 1px solid var(--ink);
+  background: var(--gold);
+  border: 1px solid var(--gold);
   color: var(--white);
   font: 500 12px/1.5 var(--sans);
   border-radius: 2px;
@@ -167,16 +168,16 @@ textarea:focus-visible {
   line-height: 1;
 }
 .button:hover {
-  background: #3c5547;
+  background: var(--gold-hover);
   transform: translateY(-2px);
 }
 .button-outline {
   background: transparent;
   color: var(--ink);
-  border-color: #a7b0a1;
+  border-color: #a68b62;
 }
 .button-outline:hover {
-  background: var(--ink);
+  background: var(--gold);
   color: var(--white);
 }
 .text-link {
@@ -219,7 +220,7 @@ textarea:focus-visible {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(248, 246, 239, 0.97);
+  background: rgba(251, 247, 239, 0.97);
   border-bottom: 1px solid var(--line);
 }
 .header-inner {
@@ -450,8 +451,8 @@ textarea:focus-visible {
   color: var(--gold);
 }
 .signature {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--cream);
+  color: var(--ink);
   overflow: hidden;
 }
 .signature-grid {
@@ -465,24 +466,24 @@ textarea:focus-visible {
   padding-block: 24px;
 }
 .signature .eyebrow {
-  color: var(--pale-gold);
+  color: var(--gold);
 }
 .signature h2 em {
-  color: var(--pale-gold);
+  color: var(--gold);
 }
 .signature p:not(.eyebrow) {
   font-size: 13px;
-  color: #d5dbd1;
+  color: #6d5d4c;
   max-width: 440px;
 }
 .signature .button {
-  background: var(--pale-gold);
-  border-color: var(--pale-gold);
-  color: var(--ink);
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
   margin-top: 7px;
 }
 .signature .button:hover {
-  background: var(--paper);
+  background: var(--gold-hover);
 }
 .signature-art {
   position: relative;
@@ -491,7 +492,7 @@ textarea:focus-visible {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--pale-gold);
+  color: var(--gold);
 }
 .signature-art > svg {
   height: 69px;
@@ -513,7 +514,7 @@ textarea:focus-visible {
 }
 .orbital {
   position: absolute;
-  border: 1px solid #72816b;
+  border: 1px solid #b69a68;
   width: 310px;
   height: 370px;
   border-radius: 50%;
@@ -574,10 +575,10 @@ textarea:focus-visible {
   margin-top: 9px;
 }
 .faq details {
-  border-top: 1px solid #c5c9b9;
+  border-top: 1px solid #d6c4a8;
 }
 .faq details:last-child {
-  border-bottom: 1px solid #c5c9b9;
+  border-bottom: 1px solid #d6c4a8;
 }
 .faq summary {
   cursor: pointer;
@@ -633,7 +634,7 @@ textarea:focus-visible {
   flex-shrink: 0;
 }
 .site-footer {
-  background: #e9e7dc;
+  background: #f0e4cf;
   border-top: 1px solid var(--line);
   padding: 66px 0 23px;
 }
@@ -678,7 +679,7 @@ textarea:focus-visible {
   font-size: 15px !important;
 }
 .footer-bottom {
-  border-top: 1px solid #cbd0bf;
+  border-top: 1px solid #d6c4a8;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -714,7 +715,7 @@ textarea:focus-visible {
   font-family: var(--serif);
   font-size: 210px;
   line-height: 1;
-  color: #e7e5d9;
+  color: #ede2cc;
   z-index: -1;
 }
 .catalog-section {
@@ -808,33 +809,33 @@ textarea:focus-visible {
 .massage-feature {
   position: relative;
   padding: 50px;
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--cream);
+  color: var(--ink);
   overflow: hidden;
   min-height: 410px;
 }
 .massage-feature .eyebrow {
-  color: var(--pale-gold);
+  color: var(--gold);
   position: relative;
 }
 .massage-feature h2 em {
-  color: var(--pale-gold);
+  color: var(--gold);
 }
 .massage-feature > p:not(.eyebrow) {
   max-width: 340px;
   font-size: 13px;
-  color: #e0e4da;
+  color: #6d5d4c;
   position: relative;
 }
 .massage-feature .button-outline {
-  border-color: #a6b19a;
-  color: var(--paper);
+  border-color: var(--gold);
+  color: var(--ink);
   margin-top: 13px;
   position: relative;
 }
 .massage-feature .button-outline:hover {
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--gold);
+  color: var(--white);
 }
 .feature-mark {
   position: absolute;
@@ -844,11 +845,11 @@ textarea:focus-visible {
   font-style: italic;
   font-size: 220px;
   line-height: 1;
-  color: #3c5142;
+  color: #dcc7a1;
   pointer-events: none;
 }
 .massage-feature-light {
-  background: #e9e4d3;
+  background: #f4ebdb;
   color: var(--ink);
 }
 .massage-feature-light .eyebrow {
@@ -862,14 +863,14 @@ textarea:focus-visible {
 }
 .massage-feature-light .button-outline {
   color: var(--ink);
-  border-color: #9c9f8c;
+  border-color: #a68b62;
 }
 .massage-feature-light .button-outline:hover {
-  background: var(--ink);
+  background: var(--gold);
   color: var(--paper);
 }
 .massage-feature-light .feature-mark {
-  color: #ddd7c4;
+  color: #e3d3b7;
 }
 .signature-mini {
   display: grid;
@@ -897,7 +898,7 @@ textarea:focus-visible {
   gap: 11%;
 }
 .wellness-grid > div {
-  border-top: 1px solid #c6cabd;
+  border-top: 1px solid #d6c4a8;
   padding-top: 35px;
 }
 .wellness-grid h3 {
@@ -937,7 +938,7 @@ textarea:focus-visible {
   font-size: 280px;
   line-height: 1;
   text-align: center;
-  color: #c8c6ad;
+  color: #cdb98f;
 }
 .duo-section > div > p:not(.eyebrow) {
   font-size: 13px;
@@ -1110,7 +1111,7 @@ textarea:focus-visible {
 .form-field textarea {
   display: block;
   width: 100%;
-  border: 1px solid #b8bfad;
+  border: 1px solid #927b59;
   background: var(--paper);
   border-radius: 2px;
   min-height: 48px;
@@ -1125,7 +1126,7 @@ textarea:focus-visible {
 }
 .form-field input::placeholder,
 .form-field textarea::placeholder {
-  color: #737a6e;
+  color: #6d5d4c;
   opacity: 1;
 }
 .request-panel form > .button {
@@ -1142,7 +1143,7 @@ textarea:focus-visible {
 .sms-result {
   margin-top: 30px;
   padding-top: 25px;
-  border-top: 1px solid #b8bfad;
+  border-top: 1px solid #927b59;
   scroll-margin-top: 120px;
 }
 .sms-result h3 {
@@ -1161,7 +1162,7 @@ textarea:focus-visible {
 }
 .gift-section {
   padding: 55px;
-  background: #ebe4d3;
+  background: #efe2c9;
   display: grid;
   grid-template-columns: 0.65fr 1.5fr;
   gap: 45px;
@@ -1294,7 +1295,7 @@ textarea:focus-visible {
     gap: 30px;
   }
 }
-@media (max-width: 1060px) {
+@media (max-width: 1180px) {
   .header-inner {
     min-height: 82px;
     flex-wrap: wrap;
@@ -1348,6 +1349,8 @@ textarea:focus-visible {
   .js .navigation.is-open {
     display: flex;
   }
+}
+@media (max-width: 1060px) {
   .hero h1 {
     font-size: 73px;
   }
@@ -1688,7 +1691,7 @@ textarea:focus-visible {
     font-size: 12px;
     font-weight: 500;
     min-height: 54px;
-    box-shadow: 0 -2px 12px #253b3110;
+    box-shadow: 0 -2px 12px #3f302410;
   }
   .mobile-contact > span {
     font-size: 23px;
@@ -2063,7 +2066,7 @@ body::before {
   transform: translateX(-50%);
   white-space: nowrap;
   font-size: 9px;
-  background: #f8f6eff2;
+  background: #fbf7eff2;
   color: var(--ink);
 }
 .hero-detail {
@@ -2073,7 +2076,7 @@ body::before {
   width: 151px;
   background: var(--white);
   padding: 6px;
-  box-shadow: 0 12px 40px #17271e26;
+  box-shadow: 0 12px 40px #3f302426;
   transform: rotate(5deg);
   pointer-events: none;
 }
@@ -2132,7 +2135,7 @@ body::before {
 }
 .signature {
   position: relative;
-  background-image: radial-gradient(ellipse at 80% 90%, #58705a2e, transparent 55%);
+  background-image: radial-gradient(ellipse at 80% 90%, #ad8b4b14, transparent 55%);
 }
 .signature-art::after {
   position: absolute;
@@ -2143,8 +2146,8 @@ body::before {
   border-radius: 50%;
   top: 55px;
   left: 80px;
-  background: var(--ink);
-  box-shadow: 0 0 0 8px var(--ink);
+  background: var(--gold);
+  box-shadow: 0 0 0 8px var(--cream);
 }
 .signature-time {
   font-style: italic;
@@ -2166,11 +2169,11 @@ body::before {
 .massage-feature {
   border-radius: 130px 3px 3px 3px;
   padding-top: 65px;
-  background-image: radial-gradient(ellipse at 100% 0%, #5f745342, transparent 70%);
+  background-image: radial-gradient(ellipse at 100% 0%, #b6935514, transparent 70%);
 }
 .massage-feature-light {
   border-radius: 3px 3px 130px 3px;
-  background-image: radial-gradient(ellipse at 100% 100%, #c0ab7033, transparent 70%);
+  background-image: radial-gradient(ellipse at 100% 100%, #c0ab7014, transparent 70%);
 }
 .massage-feature::after {
   content: '';
@@ -2243,7 +2246,7 @@ body::before {
   bottom: 20px;
   left: 20px;
   padding: 9px 12px;
-  background: #253b31ed;
+  background: #3f3024ed;
   color: var(--white);
   display: flex;
   gap: 25px;
@@ -2293,7 +2296,7 @@ body::before {
   box-shadow: 0 20px 80px #0005;
 }
 .photo-dialog::backdrop {
-  background: #122219e8;
+  background: #2c2118e8;
   backdrop-filter: blur(9px);
 }
 .photo-dialog figure > img {
@@ -2430,7 +2433,7 @@ body::before {
     top: 45px;
     width: 9px;
     height: 9px;
-    box-shadow: 0 0 0 6px var(--ink);
+    box-shadow: 0 0 0 6px var(--cream);
   }
   .portrait-photo::before {
     inset: 5px -9px 45px 9px;
@@ -2559,7 +2562,7 @@ body::before {
 .faq-answer {
   font-size: 14px;
 }
-@media (max-width: 1060px) {
+@media (max-width: 1180px) {
   .navigation,
   .navigation .nav-contact {
     font-size: 14px;
@@ -2611,4 +2614,60 @@ body::before {
   .footer-grid > div > p:not(.footer-title) {
     font-size: 11px;
   }
+}
+
+/* Laser diode: visible from the introduction, with the institute's gold and beige palette. */
+.navigation > a[href$="#epilation-laser-diode"] {
+  color: var(--gold);
+  font-weight: 600;
+}
+.hero.laser-hero h1 {
+  font-size: clamp(48px, 5.7vw, 82px);
+}
+.laser-intro {
+  margin-bottom: 48px;
+}
+.treatment.laser-priority {
+  scroll-margin-top: 118px;
+  padding: clamp(24px, 4vw, 46px);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: 3px 44px 3px 3px;
+  background: var(--cream);
+}
+.laser-priority h2 {
+  font-size: clamp(32px, 3.6vw, 48px);
+  margin-bottom: 18px;
+}
+.laser-priority .text-link {
+  font-size: 13px;
+}
+@media (min-width: 1181px) and (max-width: 1320px) {
+  .navigation {
+    gap: 18px;
+    font-size: 11px;
+  }
+  .navigation .nav-contact {
+    padding-inline: 12px;
+    gap: 10px;
+  }
+}
+@media (max-width: 760px) {
+  .hero.laser-hero h1 {
+    font-size: clamp(45px, 11.5vw, 66px);
+  }
+  .treatment.laser-priority {
+    gap: 14px;
+    padding: 26px 20px;
+    scroll-margin-top: 100px;
+  }
+  .laser-intro {
+    margin-bottom: 32px;
+  }
+}
+/* Identify the slimming photographs before they appear, including on mobile. */
+.minceur-heading h2 {
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.1;
+  margin-bottom: 32px;
 }

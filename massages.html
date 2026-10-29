@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex,nofollow" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta name="theme-color" content="#253b31" />
+    <meta name="theme-color" content="#efe4d3" />
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'"
@@ -34,9 +34,9 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/icon.png" />
     <link rel="stylesheet" href="assets/fonts.css" />
-    <link rel="stylesheet" href="assets/site.css" />
-    <link rel="stylesheet" href="assets/experience.css?v=20261017-hd" />
-    <script src="assets/site.js" defer></script>
+    <link rel="stylesheet" href="assets/site.css?v=20261025-laser-or" />
+    <link rel="stylesheet" href="assets/experience.css?v=20261025-laser-or" />
+    <script src="assets/site.js?v=20261025-navigation" defer></script>
     <script src="assets/experience.js" defer></script>
   </head>
   <body>
@@ -44,7 +44,7 @@
     <a class="skip-link" href="#contenu">Aller au contenu</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="index.html" aria-label="Le Parad’Ysi, accueil"
+        <a class="brand" href="index.html"
           ><svg viewBox="0 0 52 52" fill="none" aria-hidden="true">
             <path
               d="M26 44C15 36 10 28 13 19c7 1 11 6 13 14 2-8 6-13 13-14 3 9-2 17-13 25Z"
@@ -58,7 +58,8 @@
           <span class="menu-label">Menu</span><span class="menu-lines" aria-hidden="true"></span>
         </button>
         <nav id="navigation" class="navigation" aria-label="Navigation principale">
-          <a href="index.html">L’institut</a><a href="beaute-minceur.html">Beauté & minceur</a
+          <a href="index.html">L’institut</a>
+          <a href="beaute-minceur.html#epilation-laser-diode">Épilation laser diode</a><a href="beaute-minceur.html">Beauté & minceur</a
           ><a href="massages.html" aria-current="page">Massages & soins</a
           ><a href="spa-sauna.html">Spa & sauna</a
           ><a class="nav-contact" href="contact.html"
@@ -259,6 +260,7 @@
         </div>
         <div>
           <p class="footer-title">Votre parenthèse</p>
+          <a href="beaute-minceur.html#epilation-laser-diode">Épilation laser diode</a>
           <a href="beaute-minceur.html">Beauté & minceur</a
           ><a href="massages.html">Massages & soins</a><a href="spa-sauna.html">Spa & sauna</a
           ><a href="contact.html">Contact & accès</a>
@@ -286,9 +288,11 @@
         </button>
       </div>
     </footer>
-    <a class="mobile-contact" href="contact.html"
-      >Demander un rendez-vous <span aria-hidden="true">↗</span></a
-    >
+    <nav aria-label="Rendez-vous rapide">
+      <a class="mobile-contact" href="contact.html"
+        >Demander un rendez-vous <span aria-hidden="true">↗</span></a
+      >
+    </nav>
     <dialog class="photo-dialog" aria-labelledby="photo-caption">
       <button class="photo-close" type="button" aria-label="Fermer la photographie">
         Fermer <span aria-hidden="true">×</span>

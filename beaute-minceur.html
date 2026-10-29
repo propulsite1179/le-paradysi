@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex,nofollow" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta name="theme-color" content="#253b31" />
+    <meta name="theme-color" content="#efe4d3" />
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'"
@@ -37,9 +37,9 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/icon.png" />
     <link rel="stylesheet" href="assets/fonts.css" />
-    <link rel="stylesheet" href="assets/site.css" />
-    <link rel="stylesheet" href="assets/experience.css?v=20261017-hd" />
-    <script src="assets/site.js" defer></script>
+    <link rel="stylesheet" href="assets/site.css?v=20261025-laser-or" />
+    <link rel="stylesheet" href="assets/experience.css?v=20261025-laser-or" />
+    <script src="assets/site.js?v=20261025-navigation" defer></script>
     <script src="assets/experience.js" defer></script>
   </head>
   <body>
@@ -47,7 +47,7 @@
     <a class="skip-link" href="#contenu">Aller au contenu</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="index.html" aria-label="Le Parad’Ysi, accueil"
+        <a class="brand" href="index.html"
           ><svg viewBox="0 0 52 52" fill="none" aria-hidden="true">
             <path
               d="M26 44C15 36 10 28 13 19c7 1 11 6 13 14 2-8 6-13 13-14 3 9-2 17-13 25Z"
@@ -61,8 +61,8 @@
           <span class="menu-label">Menu</span><span class="menu-lines" aria-hidden="true"></span>
         </button>
         <nav id="navigation" class="navigation" aria-label="Navigation principale">
-          <a href="index.html">L’institut</a
-          ><a href="beaute-minceur.html" aria-current="page">Beauté & minceur</a
+          <a href="index.html">L’institut</a>
+          <a href="beaute-minceur.html#epilation-laser-diode">Épilation laser diode</a><a href="beaute-minceur.html" aria-current="page">Beauté & minceur</a
           ><a href="massages.html">Massages & soins</a><a href="spa-sauna.html">Spa & sauna</a
           ><a class="nav-contact" href="contact.html"
             >Prendre rendez-vous <span aria-hidden="true">↗</span></a
@@ -73,21 +73,41 @@
     <main id="contenu">
       <section class="page-intro container">
         <p class="eyebrow">BEAUTÉ & MINCEUR</p>
-        <h1>Votre beauté,<br /><em>à votre rythme.</em></h1>
+        <h1>Laser diode,<br /><em>beauté &amp; minceur.</em></h1>
         <p class="intro-lead">
-          Des soins ciblés pour le corps, l’épilation et le visage. Découvrez les prestations du
-          Parad’Ysi, puis échangez avec Ysidia pour choisir votre rendez-vous.
+          Épilation laser diode, soins ciblés pour le corps et soins du visage. Découvrez les prestations du Parad’Ysi, puis échangez avec Ysidia pour choisir votre rendez-vous.
         </p>
         <span class="page-number" aria-hidden="true">01</span>
       </section>
-      <section class="container treatment-visuals" data-gallery-group>
+      <section class="container laser-intro" aria-labelledby="laser-title">
+          <article class="treatment laser-priority" id="epilation-laser-diode">
+            <span class="treatment-number">01</span>
+            <div>
+              <p class="eyebrow">L’ÉPILATION</p>
+              <h2 id="laser-title">Épilation laser diode</h2>
+              <p>
+                Pour connaître les zones proposées, l’organisation des séances et les forfaits,
+                prenez contact avec Ysidia. Les modalités et le tarif de votre prestation sont
+                précisés avant tout rendez-vous.
+              </p>
+            </div>
+            <a class="text-link" href="contact.html?soin=%C3%89pilation%20laser%20diode"
+              >Se renseigner <span aria-hidden="true">↗</span></a
+            >
+          </article>
+      </section>
+      <div class="container minceur-heading">
+        <p class="eyebrow">LES TECHNOLOGIES DE L’ESPACE MINCEUR</p>
+        <h2 id="minceur-title">Lipolaser. EMS.<br /><em>À découvrir ensemble.</em></h2>
+      </div>
+      <section class="container treatment-visuals" data-gallery-group aria-labelledby="minceur-title">
         <figure>
           <button
             class="image-zoom"
             type="button"
             data-image="assets/lipolaser-seance-hd.webp"
             data-caption="Une séance de lipolaser au Parad’Ysi"
-            aria-label="Agrandir : Une séance de lipolaser au Parad’Ysi"
+            aria-label="Voir la photo : Une séance de lipolaser au Parad’Ysi"
           >
             <img
               src="assets/lipolaser-seance-hd.webp"
@@ -102,8 +122,6 @@
           <figcaption>Le lipolaser au Parad’Ysi</figcaption>
         </figure>
         <div>
-          <p class="eyebrow">LES TECHNOLOGIES DE L’ESPACE MINCEUR</p>
-          <h2>Lipolaser.<br />EMS.<br /><em>À découvrir ensemble.</em></h2>
           <p>
             Les photos et les présentations des appareils permettent de découvrir cet univers avant
             votre premier échange avec Ysidia.
@@ -183,7 +201,7 @@
         </div>
         <div class="treatments">
           <article class="treatment">
-            <span class="treatment-number">01</span>
+            <span class="treatment-number">02</span>
             <div>
               <p class="eyebrow">LES SOINS MINCEUR</p>
               <h3>Lipolaser</h3>
@@ -197,7 +215,7 @@
             >
           </article>
           <article class="treatment">
-            <span class="treatment-number">02</span>
+            <span class="treatment-number">03</span>
             <div>
               <p class="eyebrow">LE CORPS</p>
               <h3>EMS & électrostimulation</h3>
@@ -212,7 +230,7 @@
             >
           </article>
           <article class="treatment">
-            <span class="treatment-number">03</span>
+            <span class="treatment-number">04</span>
             <div>
               <p class="eyebrow">LES PRESTATIONS COMPLÉMENTAIRES</p>
               <h3>Soins ciblés du corps</h3>
@@ -223,21 +241,6 @@
               </p>
             </div>
             <a class="text-link" href="contact.html?soin=Soins%20cibl%C3%A9s%20du%20corps"
-              >Se renseigner <span aria-hidden="true">↗</span></a
-            >
-          </article>
-          <article class="treatment">
-            <span class="treatment-number">04</span>
-            <div>
-              <p class="eyebrow">L’ÉPILATION</p>
-              <h3>Épilation laser diode</h3>
-              <p>
-                Pour connaître les zones proposées, l’organisation des séances et les forfaits,
-                prenez contact avec Ysidia. Les modalités et le tarif de votre prestation sont
-                précisés avant tout rendez-vous.
-              </p>
-            </div>
-            <a class="text-link" href="contact.html?soin=%C3%89pilation%20laser%20diode"
               >Se renseigner <span aria-hidden="true">↗</span></a
             >
           </article>
@@ -330,7 +333,8 @@
           </div>
           <div
             class="gallery-track"
-            tabindex="0"
+            role="region"
+          tabindex="0"
             aria-label="Galerie de photographies : lipolaser &amp; soins cellulite"
           >
             <figure class="media-card" data-category="lipolaser">
@@ -672,7 +676,8 @@
           </div>
           <div
             class="gallery-track"
-            tabindex="0"
+            role="region"
+          tabindex="0"
             aria-label="Galerie de photographies : pour découvrir les prestations"
           >
             <figure class="media-card document-card" data-category="depliant">
@@ -757,6 +762,7 @@
         </div>
         <div>
           <p class="footer-title">Votre parenthèse</p>
+          <a href="beaute-minceur.html#epilation-laser-diode">Épilation laser diode</a>
           <a href="beaute-minceur.html">Beauté & minceur</a
           ><a href="massages.html">Massages & soins</a><a href="spa-sauna.html">Spa & sauna</a
           ><a href="contact.html">Contact & accès</a>
@@ -784,9 +790,11 @@
         </button>
       </div>
     </footer>
-    <a class="mobile-contact" href="contact.html"
-      >Demander un rendez-vous <span aria-hidden="true">↗</span></a
-    >
+    <nav aria-label="Rendez-vous rapide">
+      <a class="mobile-contact" href="contact.html"
+        >Demander un rendez-vous <span aria-hidden="true">↗</span></a
+      >
+    </nav>
     <dialog class="photo-dialog" aria-labelledby="photo-caption">
       <button class="photo-close" type="button" aria-label="Fermer la photographie">
         Fermer <span aria-hidden="true">×</span>
